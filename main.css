@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;800;900&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Livvic', sans-serif;
+}
+
+.container-team{
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+.header{
+    background: #014E56FF;
+}
+.directors{
+    background: #004047;
+}
+
+.directors ul li{
+    background: #012F34;
+    width: 100%;
+    max-width: 350px;
+    height: 275px;
+}

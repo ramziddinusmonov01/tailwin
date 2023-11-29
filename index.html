@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTeam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   <header class="header pt-20  pb-32">
+     <div class="container-team">
+        <nav class="nav flex items-center w-full">
+            <a class="nav-logo flex mr-auto font-extrabold text-4xl text-white" href="#">myteam</a>
+            <ul class="nav-menu flex items-center gap-10 mr-10">
+                <li class="nav-menu__item text-lg text-white cursor-pointer">home</li>
+                <li class="nav-menu__item text-lg text-white cursor-pointer">about</li>
+            </ul>
+            <button class="nav-btn border-2 w-36 h-12 text-white rounded-full text-lg hover:bg-white hover:text-black transition-colors ease-in-out">contact us</button>
+        </nav>
+        <div class="header-main flex items-start mt-32 ">
+            <h1 class="header-main__title text-6xl text-white font-bold mr-auto">About</h1>
+            <p class="header-main__desc text-lg text-white w-7/12">
+                We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.
+            </p>
+        </div>
+     </div>
+   </header>
+
+
+   <div class="directors pt-20 pb-44">
+    <div class="container-team">
+        <h1 class="directors-title text-5xl text-white font-bold text-center mb-16">Meet the directors</h1>
+        <ul class="directors-list flex justify-center  gap-[30px] flex-wrap">
+            <li class="directors-list__item flex justify-center items-center flex-col relative" >
+                <img class="w-24" src="./images/one.png" alt="icone">
+                <h3 class="text-lg font-bold text-[#79C8C7] mt-[23px]">Nikita Marks</h3>
+                <p class="text-base font-medium italic text-white">Founder & CEO</p>
+                <button class="w-[56px] h-[56px] bg-red-400 absolute rounded-full bottom-[-18px] flex items-center justify-center">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.617737H6V6.61774H0V10.6177H6V16.6177H10V10.6177H16V6.61774H10V0.617737Z" fill="#012F34"/>
+                        </svg>
+                </button>
+            </li>
+            <li class="directors-list__item flex justify-center items-center flex-col relative">
+                <img class="w-24" src="./images/two.png" alt="icone">
+                <h3 class="text-lg font-bold text-[#79C8C7] mt-[23px]">Cristian Duncan</h3>
+                <p class="text-base font-medium italic text-white">Co-founder & COO</p>
+                <button class="w-[56px] h-[56px] bg-red-400 absolute rounded-full bottom-[-18px] flex items-center justify-center">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.617737H6V6.61774H0V10.6177H6V16.6177H10V10.6177H16V6.61774H10V0.617737Z" fill="#012F34"/>
+                        </svg>
+                </button>
+            </li>
+            <li class="directors-list__item flex justify-center items-center flex-col relative">
+                <img class="w-24" src="./images/three.png" alt="icone">
+                <h3 class="text-lg font-bold text-[#79C8C7] mt-[23px]">Cruz Hamer</h3>
+                <p class="text-base font-medium italic text-white">Co-founder & CTO</p>
+                <button class="w-[56px] h-[56px] bg-red-400 absolute rounded-full bottom-[-18px] flex items-center justify-center">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.617737H6V6.61774H0V10.6177H6V16.6177H10V10.6177H16V6.61774H10V0.617737Z" fill="#012F34"/>
+                        </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+   </div>
+    
+</body>
+</html>
