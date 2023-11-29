@@ -29,3 +29,11 @@ body {
     max-width: 350px;
     height: 275px;
 }
+.nav-modal{
+    right: -100%;
+    transition: 0.2s linear;
+}
+
+.openModal{
+    right:0;
+}

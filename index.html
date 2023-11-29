@@ -12,15 +12,31 @@
      <div class="container-team">
         <nav class="nav flex items-center w-full">
             <a class="nav-logo flex mr-auto font-extrabold text-4xl text-white" href="#">myteam</a>
-            <ul class="nav-menu flex items-center gap-10 mr-10">
+
+            <ul class="nav-menu flex items-center gap-10 mr-10 max-[550px]:hidden">
                 <li class="nav-menu__item text-lg text-white cursor-pointer">home</li>
                 <li class="nav-menu__item text-lg text-white cursor-pointer">about</li>
             </ul>
-            <button class="nav-btn border-2 w-36 h-12 text-white rounded-full text-lg hover:bg-white hover:text-black transition-colors ease-in-out">contact us</button>
+            <button class="nav-btn border-2 w-36 h-12 text-white rounded-full text-lg hover:bg-white hover:text-black transition-colors ease-in-out max-[550px]:hidden">contact us</button>
+            <div class="hamburger w-[20px] h-[20px] flex flex-col gap-[4px] cursor-pointer">
+                <span class="h-[3px] bg-white hidden max-[550px]:flex"></span>
+                <span class="h-[3px] bg-white hidden max-[550px]:flex"></span>
+                <span class="h-[3px] bg-white hidden max-[550px]:flex"></span>
+            </div>
+            <div class="nav-modal h-[100vh] w-[50%] bg-[#2C6269] fixed top-[0px]  z-10 pt-[56px] pr-[25px] pl-[48px] ">
+                <button class="flex ml-auto mb-[39px] close">
+                    <img src="./images/close.svg" alt="icone">
+                </button>
+                <ul class="nav-menu flex flex-col mb-[36px]">
+                    <li class="nav-menu__item text-lg text-white cursor-pointer">home</li>
+                    <li class="nav-menu__item text-lg text-white cursor-pointer">about</li>
+                </ul>
+                <button class="nav-btn border-2 w-36 h-12 text-white rounded-full text-lg hover:bg-white hover:text-black transition-colors ease-in-out ">contact us</button>
+            </div>
         </nav>
-        <div class="header-main flex items-start mt-32 ">
-            <h1 class="header-main__title text-6xl text-white font-bold mr-auto">About</h1>
-            <p class="header-main__desc text-lg text-white w-7/12">
+        <div class="header-main flex items-start mt-32 max-[860px]:flex-col max-[860px]:items-center">
+            <h1 class="header-main__title text-6xl text-white font-bold mr-auto max-[860px]:m-0">About</h1>
+            <p class="header-main__desc text-lg text-white w-7/12 mt-[50px] max-[860px]:text-center max-[500px]:text-[15px]">
                 We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.
             </p>
         </div>
@@ -69,7 +85,7 @@
    <div class="clients bg-[#012F34] py-[113px]">
     <div class="container-team">
         <h1 class="clients-title text-5xl text-white font-bold text-center mb-[52px]">Some of our clients</h1>
-        <ul class="clients-list flex items-center justify-between flex-wrap">
+        <ul class="clients-list flex items-center justify-center gap-[79px] flex-wrap">
             <li class="clients-list__item">
                 <img class="flex" src="./images/img-one.png" alt="img">
             </li>
@@ -88,5 +104,31 @@
         </ul>
     </div>
    </div>
+
+   <div class="ready bg-[#F67E7E] py-[76px]">
+    <div class="container-team flex items-center justify-around max-[480px]:flex-col ">
+        <h1 class="ready-title text-5xl text-[#012F34] font-bold max-[480px]:text-center max-[480px]:mb-[24px]">Ready to get started?</h1>
+        <button class="w-[153px] h-[48px] border-2 border-[#012F34] rounded-full text-lg text-[#012F34] font-semibold hover:bg-white transition ease-in-out">contact us</button>
+    </div>
+   </div>
+
+   <div class="footer bg-[#002529] pt-[48px] pb-[25px]">
+    <div class="container-team flex items-center justify-around">
+        <a class="flex mr-auto font-extrabold text-4xl text-white" href="#">myteam</a>
+        <ul class="footer-list flex items-center gap-[16px]">
+            <li  class="footer-list__item cursor-pointer">
+                <img src="./images/facebook-logo.svg" alt="icone">
+            </li>
+            <li  class="footer-list__item cursor-pointer">
+                <img src="./images/pinterest-logo.svg" alt="icone">
+            </li>
+            <li  class="footer-list__item cursor-pointer">
+                <img src="./images/twitter-logo.svg" alt="icone">
+            </li>
+        </ul>
+    </div>
+   </div>
+
+   <script src="./app.js"></script>
 </body>
 </html>
